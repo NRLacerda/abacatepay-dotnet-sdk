@@ -2,8 +2,8 @@
 
 namespace AbacatePaySDK.Domain.Billings.DTOs
 {
-    public record CreateBillingResponseDTO(
-        string Error,
-        Billing Billing
-    );
+        public record CreateBillingResponseDTO(
+            string Error,
+            Billing Billing
+        );
 }

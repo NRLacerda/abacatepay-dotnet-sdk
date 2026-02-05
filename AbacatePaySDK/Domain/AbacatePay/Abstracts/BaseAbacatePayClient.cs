@@ -30,8 +30,12 @@ namespace AbacatePaySDK.Domain.AbacatePay.Abstracts
             Http.DefaultRequestHeaders.Add("Accept", "application/json");
         }
 
-        public virtual AbacatePayBilling Billing()
+        public virtual BillingClient Billing()
             => throw new BusinessLogicException(WrongPaymentPathError);
+
+        /*
+         * Implementar os clients faltantes da v1: Customer, Pix, Coupons, WithDraw, Store, MRR
+         */
 
         public virtual AbacatePayCheckout Checkout()
             => throw new BusinessLogicException(WrongPaymentPathError);

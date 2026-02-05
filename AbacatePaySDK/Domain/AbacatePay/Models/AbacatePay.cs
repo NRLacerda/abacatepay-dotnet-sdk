@@ -27,6 +27,9 @@ namespace AbacatePaySDK.Domain.AbacatePay.Models
 
         private bool InitialConfigIsValid(String apiSecret, int version) => apiSecret != null && apiSecret != string.Empty && AllowedVersions.IndexOf(version) >= 0;
 
+        /// <summary>
+        /// Returns the AbacatePayClient based on the version indicated at the construction step.
+        /// </summary>
         private BaseAbacatePayClient Build()
         {
             switch (Version)

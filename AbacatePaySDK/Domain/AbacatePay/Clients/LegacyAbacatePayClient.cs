@@ -9,9 +9,17 @@ namespace AbacatePaySDK.Domain.AbacatePay.Clients
         {
         }
 
-        public override AbacatePayBilling Billing()
+        public override BillingClient Billing()
         {
-            return new AbacatePayBilling(Http);
+            return new BillingClient(Http);
         }
+
+        /*
+        public override BillingClient Billing()
+        {
+            return new BillingClient(Http);
+        }
+        */
+
     }
 }

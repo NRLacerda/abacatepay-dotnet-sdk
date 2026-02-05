@@ -14,7 +14,7 @@ namespace AbacatePaySDK.Domain.Billings.Models
         public double Amount { get; set; }
         public BillingStatus Status { get; set; }
         public Boolean DevMode { get; set; }
-        public BillingKind Frequency { get; set; }
+        public PaymentFrequency Frequency { get; set; }
 
         public class Product(string productId, int quantity)
         {
